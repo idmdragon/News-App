@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/breakingNewsFragment">
+
+    <fragment
+        android:id="@+id/savedFragment"
+        android:name="com.example.mynews.SavedFragment"
+        android:label="SavedFragment" >
+         <action
+            app:popEnterAnim="@anim/slide_out_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:enterAnim="@anim/slide_in_right"
+            android:id="@+id/action_savedFragment_to_articelFragment"
+            app:destination="@id/articelFragment" />
+    </fragment>
+    <fragment
+
+        android:id="@+id/searchFragment"
+        android:name="com.example.mynews.SearchFragment"
+        android:label="SearchFragment" >
+        <action
+            app:popEnterAnim="@anim/slide_out_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:enterAnim="@anim/slide_in_right"
+            android:id="@+id/action_searchFragment_to_articelFragment"
+            app:destination="@id/articelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/breakingNewsFragment"
+        android:name="com.example.mynews.BreakingNewsFragment"
+        android:label="BreakingNewsFragment" >
+        <action
+            app:popEnterAnim="@anim/slide_out_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:enterAnim="@anim/slide_in_right"
+            android:id="@+id/action_breakingNewsFragment_to_articelFragment"
+            app:destination="@id/articelFragment" />
+    </fragment>
+    <fragment
+        app:popEnterAnim="@anim/slide_out_left"
+        app:popExitAnim="@anim/slide_out_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:enterAnim="@anim/slide_in_right"
+        android:id="@+id/articelFragment"
+        android:name="com.example.mynews.ArticelFragment"
+        android:label="ArticelFragment" />
+</navigation>
