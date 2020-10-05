@@ -5,7 +5,7 @@
 
     <fragment
         android:id="@+id/savedFragment"
-        android:name="com.example.mynews.SavedFragment"
+        android:name="com.example.mynews.ui.SavedFragment"
         android:label="SavedFragment" >
          <action
             app:popEnterAnim="@anim/slide_out_left"
@@ -18,7 +18,7 @@
     <fragment
 
         android:id="@+id/searchFragment"
-        android:name="com.example.mynews.SearchFragment"
+        android:name="com.example.mynews.ui.SearchFragment"
         android:label="SearchFragment" >
         <action
             app:popEnterAnim="@anim/slide_out_left"
@@ -30,7 +30,7 @@
     </fragment>
     <fragment
         android:id="@+id/breakingNewsFragment"
-        android:name="com.example.mynews.BreakingNewsFragment"
+        android:name="com.example.mynews.ui.BreakingNewsFragment"
         android:label="BreakingNewsFragment" >
         <action
             app:popEnterAnim="@anim/slide_out_left"
@@ -46,6 +46,6 @@
         app:exitAnim="@anim/slide_out_left"
         app:enterAnim="@anim/slide_in_right"
         android:id="@+id/articelFragment"
-        android:name="com.example.mynews.ArticelFragment"
+        android:name="com.example.mynews.ui.ArticelFragment"
         android:label="ArticelFragment" />
 </navigation>
