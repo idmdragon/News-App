@@ -6,6 +6,7 @@ import android.webkit.WebViewClient
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import com.example.mynews.R
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.fragment_articel.*
 
 class ArticelFragment : Fragment(R.layout.fragment_articel) {
@@ -25,6 +26,10 @@ class ArticelFragment : Fragment(R.layout.fragment_articel) {
         }
 
 
+        fab.setOnClickListener {
+            viewModel.saveArticle(article)
+            Snackbar.make(view,"Article saved Succesfully ", Snackbar.LENGTH_SHORT).show()
+        }
     }
 
 }
