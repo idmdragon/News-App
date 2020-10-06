@@ -1,4 +1,4 @@
-package com.example.mynews.network
+package com.example.mynews.models
 
 data class Source(
     val id: Any,
